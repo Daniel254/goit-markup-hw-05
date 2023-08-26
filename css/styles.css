@@ -778,6 +778,7 @@ button {
 .contact-form__label {
   display: block;
   margin-bottom: 4px;
+  color: var(--light-slate)
 }
 
 .contact-form__input {
@@ -812,7 +813,6 @@ button {
 
 .contact-form__input_message {
   height: 120px;
-  height: auto;
   resize: none;
   padding: 8px 16px;
   font-size: 12px;
@@ -826,6 +826,9 @@ button {
   align-items: center; */
   /* margin-bottom: 24px; */
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
 }
 .contact-form__input:focus {
   border: 1px solid var(--iris, #4d5ae5);
@@ -840,9 +843,10 @@ button {
   appearance: none;
 }
 .contact-form__input_checkbox:checked + .contact-form__label_checkbox .custom-checkbox {
-  background-color: var(--iris, #4d5ae5);
+  background-color: var(--ocean);
+  border: none;
   fill: var(--cloud);
-  border-color: var(--iris, #4d5ae5);
+  /* border-color: var(--iris, #4d5ae5); */
 }
 .custom-checkbox {
   line-height: 0;
@@ -856,7 +860,7 @@ button {
   border-radius: 2px;
   fill: transparent;
   transition: background-color var(--transition), fill var(--transition),
-    border-color var(--transition);
+    border var(--transition);
 }
 .custom-checkbox-icon {
 
